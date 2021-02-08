@@ -3,29 +3,12 @@
 # React Coding Challenge
 
 ## The task
-Your job is to create a NextJS app which stores file details in the browsers local storage and keeps a history. The files are also submitted to an API. Only the file meta deta is stored in the browser storage, the files itself won't be stored or uploaded.
+Your job is to create a NextJS app which stores file details in the browsers local storage and keeps a history. Only the file meta deta is stored in the browser storage, the files itself won't be stored or uploaded.
 
 ## Tech stack:
 * Create Next App: [Create next app starter](https://nextjs.org/docs#setup)
 * State Managment: [Redux](https://github.com/reduxjs/react-redux) or [MobX](https://mobx.js.org/README.html)
 * Styled Components: (if you like to style things): [Styled Components](https://github.com/styled-components/styled-components)
-
-## API Endpoint:
-Endpoint: `POST`: `https://coding-challenge.free.beeceptor.com/files/`
-
-```
-{
-	"fileName": "test.docx",
-	"lastModified": "1233312331231",
-	"fileSize:": "123132",
-	"fileType": "pdf"
-}
-```
-
-`fileName` name of the file including the file extension
-`lastModified` timestamp when the file was last modified
-`fileSize` file size in bytes
-`fileType` file extension (e.g. pdf, docx, doc, ...)
 
 ## Screens:
 * `Main Screen` 
@@ -60,7 +43,7 @@ Endpoint: `POST`: `https://coding-challenge.free.beeceptor.com/files/`
 
 ## What will we be paying attention to:
 1. How you split code for components
-2. How your store looks like and how you communicate with redux.
+2. How your store looks like and how you communicate with redux/mobx.
 3. Reusability of the components.
 4. Code repetitions and reusability (keep your code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) and simple [KISS](https://en.wikipedia.org/wiki/KISS_principle)).
 5. How and where you put your business logic.

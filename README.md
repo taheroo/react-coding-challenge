@@ -6,7 +6,7 @@
 Your job is to create a NextJS app which stores file details in the browsers local storage and keeps a history. Only the file meta deta is stored in the browser storage, the files itself won't be stored or uploaded.
 
 ## Tech stack:
-* Create Next App: [Create next app starter](https://nextjs.org/docs#setup)
+* TypeScript NextJS Starter: [Typescript NextJS Starter](https://github.com/XD2Sketch/typescript-nextjs-starter)
 * State Managment: [Redux](https://github.com/reduxjs/react-redux) or [MobX](https://mobx.js.org/README.html)
 * Styled Components: (if you like to style things): [Styled Components](https://github.com/styled-components/styled-components)
 
@@ -26,20 +26,21 @@ Your job is to create a NextJS app which stores file details in the browsers loc
 ![Desktop HD 3](https://user-images.githubusercontent.com/5519740/102994792-320b8400-4539-11eb-851d-c285bd9f5b4e.jpg)
 
 ## Must-have:
-1. React + State Management (Redux/MobX)
-2. Validation on forms
-3. Usage of modern js functionality (ES6+)
-4. Create a new repo, add this README as the initial commit. Then make a pull request to your own master/main branch
+1. TypeScript
+2. React + State Management (Redux/MobX)
+3. Validation on forms
+4. Usage of modern js functionality (ES6+)
+5. Use the _TypeScript NextJS Starter_ to get things going
 
 ## Nice to have:
-1. Typescript
-2. Clean code (linters, prettier)
+2. Clean code (run linters, prettier)
 3. A few tests
 4. App deployed to [Vercel](https://www.vercel.com/)
-5. Cleanup what ever you don't need from create next app
 6. Conventional Commit Messages
 7. Gitflow Branch Naming
-8. Github Actions
+
+## Very nice to have:
+8. Github Actions to run linting and tests
 
 ## What will we be paying attention to:
 1. How you split code for components

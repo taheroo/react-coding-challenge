@@ -15,7 +15,7 @@ Your job is to create a NextJS app which stores file details in the browsers loc
     * Displays an upload dialog
     * Once a file was dropped on the file upload dialog area it will dispaly the file name and a "Save File" and "Reset File" button
     * Only PDF, DOCX, DOC are allowed
-    * Clicking "Save File" will persist the file meta data in the browsers local storage and upload it to the API (`POST` to `/files`)
+    * Clicking "Save File" will persist the file meta data in the browsers local storage
     * Clicking "Reset File" will reset the upload dialog
     * List all previously saved files (if any) in a table
     * Clicking on the "X" icon in the file list will remove the item and remove it from the browser storage

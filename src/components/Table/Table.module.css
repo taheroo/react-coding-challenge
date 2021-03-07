@@ -1,0 +1,22 @@
+.defaultText {
+  color: rgb(114, 100, 177);
+}
+
+.tableHeader {
+  text-align: left;
+}
+
+.tableRow {
+  background-color: rgb(246, 246, 246);
+  -webkit-transition: all 1s linear;
+}
+
+.table {
+  width: 70%;
+  border: 3px solid rgb(202, 202, 202);
+  border-collapse: collapse;
+}
+
+.deleteButton {
+  color: rgb(114, 100, 177);
+}

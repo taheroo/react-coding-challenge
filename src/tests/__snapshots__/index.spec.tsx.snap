@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Should matches the snapshot 1`] = `
+<div>
+  <main>
+    <p>
+      Drop Zone
+    </p>
+    <div
+      draggable="true"
+      onDragEnter={[Function]}
+    >
+      <label
+        htmlFor="file-input"
+      >
+        <div>
+          <p
+            className=" "
+          >
+            +
+          </p>
+          <p>
+            Drop file here
+          </p>
+        </div>
+        <input
+          accept="application/pdf, doc"
+          id="file-input"
+          onChange={[Function]}
+          type="file"
+        />
+      </label>
+    </div>
+    <p>
+      File History
+    </p>
+    <table
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <tbody>
+        <tr
+          className=" "
+        >
+          <th>
+            Filename
+          </th>
+          <th>
+            File Size
+          </th>
+          <th>
+            Last Modified
+          </th>
+          <th>
+            File Format
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</div>
+`;

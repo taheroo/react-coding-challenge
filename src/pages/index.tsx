@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     fileHistory.dispatch(filesLoaded());
-    setFiles(fileHistory.getState());
+    setFiles(fileHistory.getState().fileHistory);
   }, []);
 
   const onChangeInputFile = (e: any) => {
@@ -49,7 +49,7 @@ export default function Home() {
 
     localStorage.setItem(`file-history`, updateFileHistory);
     fileHistory.dispatch(fileAdded(t));
-    setFiles(fileHistory.getState());
+    setFiles(fileHistory.getState().fileHistory);
     setIsDisabled(true);
   };
 
@@ -67,7 +67,7 @@ export default function Home() {
       fileHistorytmp = fileHistorytmp.substring(1, fileHistorytmp.length - 1);
       localStorage.setItem(`file-history`, fileHistorytmp);
       fileHistory.dispatch(fileRemoved({ id }));
-      setFiles(fileHistory.getState());
+      setFiles(fileHistory.getState().fileHistory);
     }
   };
 

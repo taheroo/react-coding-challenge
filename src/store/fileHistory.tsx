@@ -1,21 +1,17 @@
-import { createAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
-// Action creators
-export const filesLoaded = createAction(`filesLoaded`);
-export const fileAdded = createAction(`fileAded`);
-export const fileRemoved = createAction(`fileRemoved`);
-
-// Reducer
-export default function reducer(state = [], action) {
-  switch (action.type) {
-    case filesLoaded.type: {
+const slice = createSlice({
+  name: 'fileHistory',
+  initialState: [],
+  reducers: {
+    filesLoaded: (state, action) => {
       if (localStorage.getItem(`file-history`)) {
         const f = `[${localStorage.getItem(`file-history`)}]`;
         return JSON.parse(f);
       }
       return [];
-    }
-    case fileAdded.type:
+    },
+    fileAdded: (state, action) => {
       return [
         ...state,
         {
@@ -26,9 +22,11 @@ export default function reducer(state = [], action) {
           type: action.payload.type,
         },
       ];
-    case fileRemoved.type:
-      return state.filter((file) => file.id !== action.payload.id);
-    default:
-      return state;
-  }
-}
+    },
+    fileRemoved: (state, action) =>
+      state.filter((file) => file.id !== action.payload.id),
+  },
+});
+
+export const { filesLoaded, fileAdded, fileRemoved } = slice.actions;
+export default slice.reducer;
